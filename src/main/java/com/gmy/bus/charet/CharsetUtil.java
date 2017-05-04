@@ -11,8 +11,8 @@ public class CharsetUtil {
     /**
      * 获取输入字符串的字符集
      *
-     * @param str
-     * @throws UnsupportedEncodingException
+     * @param str 输入字符串
+     * @throws UnsupportedEncodingException 不支持的字符集
      */
     public void getStringCharset(String str) throws UnsupportedEncodingException {
         System.out.println("1:" + new String(str.getBytes("GBK"), "ISO8859_1"));
@@ -35,8 +35,8 @@ public class CharsetUtil {
 
     /**
      * 获取输入数组的字符集
-     * @param bytes
-     * @throws UnsupportedEncodingException
+     * @param bytes 输入字符串
+     * @throws UnsupportedEncodingException 不支持的字符集
      */
     public void getBytesCharset(byte[] bytes) throws UnsupportedEncodingException {
         System.out.println("1:" + new String(bytes, "ISO8859_1"));
